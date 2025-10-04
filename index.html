@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vehicle Rental System - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            margin: 20px;
+            transition: background 0.3s, color 0.3s;
+        }
+        h1 { text-align: center; margin-bottom: 30px; }
+        .vehicle-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .vehicle {
+            border: 1px solid gray;
+            padding: 15px;
+            border-radius: 10px;
+            background: white;
+            transition: background 0.3s, color 0.3s;
+            text-align: center;
+        }
+        .vehicle img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 8px 15px;
+            margin-top: 8px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover { background: #0056b3; }
+        body.dark-mode { background: #121212; color: #eaeaea; }
+        .vehicle.dark-mode { background: #1e1e1e; border-color: #444; }
+    </style>
+</head>
+  
+<body>
+    <button onclick="toggleDarkMode()" style="position:fixed; top:20px; right:20px; padding:5px 10px;">
+        🌙 Toggle Dark Mode
+    </button>
+
+    <!-- Company Name -->
+    <h1 style="text-align:center; margin-bottom:10px; color:#007bff;">RENTEX</h1>
+
+    <h1>Available Vehicles</h1>
+
+    <div class="vehicle-container">
+        <!-- Cars -->
+        <div class="vehicle">
+            <img src="https://www.caranddriver.com/images/2020-audi-a6-front.jpg" alt="Audi A6">
+            <h2>Audi A6</h2>
+            <p>Rent: ₹3,000/day</p>
+            <button onclick="window.location.href='booking.html?vehicle=Audi%20A6&price=3000'">Book Now</button>
+        </div>
+
+        <div class="vehicle">
+            <img src="https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/c-class/sedan/overview/2023-c-class-sedan-gallery-01.jpg" alt="Mercedes Benz C-Class">
+            <h2>Mercedes Benz C-Class</h2>
+            <p>Rent: ₹4,500/day</p>
+            <button onclick="window.location.href='booking.html?vehicle=Mercedes%20Benz%20C-Class&price=4500'">Book Now</button>
+        </div>
+
+        <div class="vehicle">
+            <img src="https://www.bmwusa.com/content/dam/bmwusa/5-series/2025/BMW-5-Series-2025-Exterior-Front.jpg" alt="BMW 5 Series">
+            <h2>BMW 5 Series</h2>
+            <p>Rent: ₹5,000/day</p>
+            <button onclick="window.location.href='booking.html?vehicle=BMW%205%20Series&price=5000'">Book Now</button>
+        </div>
+
+        <div class="vehicle">
+            <img src="https://www.jaguarusa.com/content/dam/jaguarusa/vehicles/xf/2025/overview/2025-jaguar-xf-gallery-01.jpg" alt="Jaguar XF">
+            <h2>Jaguar XF</h2>
+            <p>Rent: ₹6,000/day</p>
+            <button onclick="window.location.href='booking.html?vehicle=Jaguar%20XF&price=6000'">Book Now</button>
+        </div>
+
+        <div class="vehicle">
+            <img src="https://www.tesla.com/sites/default/files/modelsx-new/social/model-3-hero-social.jpg" alt="Tesla Model 3">
+            <h2>Tesla Model 3</h2>
+            <p>Rent: ₹7,000/day</p>
+            <button onclick="window.location.href='booking.html?vehicle=Tesla%20Model%203&price=7000'">Book Now</button>
+        </div>
+
+        <div class="vehicle">
+            <img src="https://www.hyundai.com/in/en/find-a-car/creta/exterior/images/creta-exterior-1.jpg" alt="Hyundai Creta">
+            <h2>Hyundai Creta</h2>
+            <p>Rent: ₹1,800/day</p>
+            <button onclick="window.location.href='booking.html?vehicle=Hyundai%20Creta&price=1800'">Book Now</button>
+        </div>
+
+        <div class="vehicle">
+            <img src="https://www.carwale.com/images/2021/Maruti-Suzuki/Swift/Exterior/Front-Left-Three-Quarter.jpg" alt="Maruti Suzuki Swift">
+            <h2>Maruti Suzuki Swift</h2>
+            <p>Rent: ₹1,200/day</p>
+            <button onclick="window.location.href='booking.html?vehicle=Maruti%20Suzuki%20Swift&price=1200'">Book Now</button>
+        </div>
+
+        <div class="vehicle">
+            <img src="https://www.toyotabharat.com/content/dam/toyota/india/fortuner/2025/fortuner-exterior.jpg" alt="Toyota Fortuner">
+            <h2>Toyota Fortuner</h2>
+            <p>Rent: ₹3,500/day</p>
+            <button onclick="window.location.href='booking.html?vehicle=Toyota%20Fortuner&price=3500'">Book Now</button>
+        </div>
+
+        <div class="vehicle">
+            <img src="https://www.mahindra.com/content/dam/mahindra/automotive/vehicles/thar/2025/thar-exterior.jpg" alt="Mahindra Thar">
+            <h2>Mahindra Thar</h2>
+            <p>Rent: ₹2,500/day</p>
+            <button onclick="window.location.href='booking.html?vehicle=Mahindra%20Thar&price=2500'">Book Now</button>
+        </div>
+
+        <!-- Bikes -->
+        <div class="vehicle">
+            <img src="https://www.yamaha-motor-india.com/images/bikes/r15-v3/hero.jpg" alt="Yamaha R15">
+            <h2>Yamaha R15</h2>
+            <p>Rent: ₹700/day</p>
+            <button onclick="window.location.href='booking.html?vehicle=Yamaha%20R15&price=700'">Book Now</button>
+        </div>
+
+        <div class="vehicle">
+            <img src="https://www.royalenfield.com/in/wp-content/uploads/2025/01/classic350-hero.jpg" alt="Royal Enfield Classic 350">
+            <h2>Royal Enfield Classic 350</h2>
+            <p>Rent: ₹900/day</p>
+            <button onclick="window.location.href='booking.html?vehicle=Royal%20Enfield%20Classic%20350&price=900'">Book Now</button>
+        </div>
+
+        <div class="vehicle">
+            <img src="https://www.ktm.com/in/models/naked-bike/duke-390/2025/duke-390-hero.jpg" alt="KTM Duke 390">
+            <h2>KTM Duke 390</h2>
+            <p>Rent: ₹1,200/day</p>
+            <button onclick="window.location.href='booking.html?vehicle=KTM%20Duke%20390&price=1200'">Book Now</button>
+        </div>
+
+        <div class="vehicle">
+            <img src="https://www.bajajauto.com/images/pulsar-220f-hero.jpg" alt="Bajaj Pulsar 220">
+            <h2>Bajaj Pulsar 220</h2>
+            <p>Rent: ₹600/day</p>
+            <button onclick="window.location.href='booking.html?vehicle=Bajaj%20Pulsar%20220&price=600'">Book Now</button>
+        </div>
+
+        <div class="vehicle">
+            <img src="https://www.honda2wheelersindia.com/images/activa-6g-hero.jpg" alt="Honda Activa 6G">
+            <h2>Honda Activa 6G</h2>
+            <p>Rent: ₹400/day</p>
+            <button onclick="window.location.href='booking.html?vehicle=Honda%20Activa%206G&price=400'">Book Now</button>
+        </div>
+
+        <div class="vehicle">
+            <img src="https://www.suzukimotorcycle.co.in/images/hayabusa-hero.jpg" alt="Suzuki Hayabusa">
+            <h2>Suzuki Hayabusa</h2>
+            <p>Rent: ₹3,500/day</p>
+            <button onclick="window.location.href='booking.html?vehicle=Suzuki%20Hayabusa&price=3500'">Book Now</button>
+        </div>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+            document.querySelectorAll(".vehicle").forEach(v => v.classList.toggle("dark-mode"));
+            
+            if (document.body.classList.contains("dark-mode")) {
+                localStorage.setItem("theme", "dark");
+            } else {
+                localStorage.setItem("theme", "light");
+            }
+        }
+
+        window.onload = function() {
+            if (localStorage.getItem("theme") === "dark") {
+                document.body.classList.add("dark-mode");
+                document.querySelectorAll(".vehicle").forEach(v => v.classList.add("dark-mode"));
+            }
+        }
+    </script>
+</body>
+</html>
